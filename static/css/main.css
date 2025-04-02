@@ -1,0 +1,76 @@
+#search {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+#slogan {
+    z-index: 2;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.3vw;
+    color: #f2f2f2;
+}
+
+#mixwavemusic {
+    z-index: 3;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'MonainnRegular', Arial, sans-serif;
+    font-size: 5vw;
+    color: #f2f2f2;
+    text-decoration: none;
+}
+
+#search img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#searchBar {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    gap: 10px;
+}
+
+#searchInput {
+    outline: none;
+    border: none;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+    background-color: #333;
+    color: #f2f2f2;
+    box-sizing: border-box;
+    width: 30vw;
+    height: 7vh;
+    padding: 1vw;
+    font-size: 1.25vw;
+}
+
+#searchButton {
+    outline: none;
+    border: none;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+    background-color: #333;
+    color: #f2f2f2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    width: 8vw;
+    height: 7vh;
+    padding: 1vw;
+    font-size: 1.25vw;
+}
+
+#searchButton:hover {
+    background-color: #ddd;
+    color: black;
+}

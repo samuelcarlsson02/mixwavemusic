@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>MixWaveMusic - Playlists</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/playlists.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/shared.css') }}">
+    </head>
+
+    <body>
+        <div class="navbar">
+            <a href="/" class="logo">MixWaveMusic</a>
+            <div class="nav-links">
+                <div id="miniSearchBar">
+                    <input type="text" id="miniSearchInput" placeholder="What do you want to listen to?">
+                    <button id="miniSearchButton" onclick="search()">Search</button>
+                </div>
+                <a href="/">Home</a>
+                <a href="/playlists">Playlists</a>
+                <a id="loginNavButton" href="/login">Login</a>
+            </div>
+        </div>
+
+        <div id="playlistsContainer">
+            <h1 id="playlistsH1">Playlists</h1>
+            <div id="playlists"></div>
+        </div>
+
+        <div id="loginPopup" class="popup">
+            <div class="popup-content">
+                <span class="close" onclick="closeLoginPopup()">&times;</span>
+                <p>Please login to access this feature.</p>
+            </div>
+        </div>
+
+        <div id="overlay"></div>
+
+        <script src="{{ url_for('static', filename='js/playlists.js') }}" defer></script>
+        <script src="{{ url_for('static', filename='js/shared.js') }}" defer></script>
+    </body>
+
+</html>

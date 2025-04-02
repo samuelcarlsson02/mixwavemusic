@@ -1,0 +1,77 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+#registerContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #333;
+    width: 45vw;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+    height: 100vh;
+}
+
+#registerH1 {
+    margin-bottom: 20px;
+    font-size: 40px;
+    margin-top: 130px;
+}
+
+#usernameH2, #passwordH2, #emailH2, #confirmPasswordH2 {
+    text-align: left;
+    width: 88%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#usernameInput, #passwordInput, #emailInput, #confirmPasswordInput{
+    width: 85%;
+    padding: 10px;
+    background-color: #666666;
+    font-size: 16px;
+    color: #f2f2f2;
+    border: none;
+    margin-bottom: 5px;
+}
+
+#registerButton {
+    display: block;
+    width: 88%;
+    padding: 10px;
+    background-color: #666666;
+    font-size: 16px;
+    color: #f2f2f2;
+    text-align: center;
+    margin-top: 20px;
+    border: none;
+}
+
+#registerButton:hover {
+    background-color: #f2f2f2;
+    color: black;
+}
+
+#alreadyHaveAccountContainer {
+    display: flex;
+    justify-content: flex-start;
+    width: 87%;
+    align-items: center;
+    margin: 0 auto;
+}
+
+#alreadyHaveAccountH3, #loginRedirectA {
+    font-size: 15px;
+    color: #c2c0c0;
+}
+
+#loginRedirectA {
+    margin-left: 10px;
+    font-weight: bold;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>MixWaveMusic - Playlist</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/playlist.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/shared.css') }}">
+    </head>
+
+    <body>
+        <div class="navbar">
+            <a href="/" class="logo">MixWaveMusic</a>
+            <div class="nav-links">
+                <div id="miniSearchBar">
+                    <input type="text" id="miniSearchInput" placeholder="What do you want to listen to?">
+                    <button id="miniSearchButton" onclick="search()">Search</button>
+                </div>
+                <a href="/">Home</a>
+                <a href="/playlists">Playlists</a>
+                <a id="loginNavButton" href="/login">Login</a>
+            </div>
+        </div>
+
+        <div id="player"></div>
+
+        <div id="playlistName"></div>
+        <div id="playButtonContainer">
+            <button id="mainPlayButton" onclick="playPlaylist()"></button>
+        </div>
+        <div id="songs"></div>
+
+        <div id="player-controls">
+            <div id="song-info"></div>
+            <div id="player-buttons-time">
+                <div id="elapsed-time">00:00</div>
+                <div id="time-divider">/</div>
+                <div id="total-time">00:00</div>
+                <button id="pause-button" onclick="pauseSong()"></button>
+                <button id="play-button" onclick="continuePlaySong()"></button>
+                <button id="skip-button" onclick="skipSong()"></button>
+            </div>
+        </div>
+        <div id="bar-container">
+            <div id="progress-bar-container">
+                <div id="progress-bar"></div>
+            </div>
+        </div>
+
+        <div id="errorPopup" class="popup">
+            <div class="popup-content">
+                <span class="close" onclick="closeErrorPopup()">&times;</span>
+                <p id="errorText"></p>
+            </div>
+        </div>
+
+        <div id="overlay"></div>
+
+        <script src="{{ url_for('static', filename='js/playlist.js') }}" defer></script>
+        <script src="{{ url_for('static', filename='js/shared.js') }}" defer></script>
+        <script src="https://www.youtube.com/iframe_api"></script>
+        <script src="https://w.soundcloud.com/player/api.js" type="text/javascript"></script>
+    </body>
+
+</html>

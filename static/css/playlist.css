@@ -1,0 +1,219 @@
+#player {
+    display: none;
+}
+
+#sc-widget {
+    display: none;
+}
+
+#playlistName {
+    margin-top: 105px;
+    margin-left: 15px;
+}
+
+#playButtonContainer {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+}
+
+#mainPlayButton {
+    font-size: 20px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    width: 0;
+    height: 0;
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+    border-left: 50px solid #4CAF50;
+    background: none;
+    padding: 0;
+    float: left;
+    margin-left: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 3px;
+}
+
+#mainPlayButton:hover {
+    border-left-color: #3d8540;
+}
+
+#songs {
+    margin-top: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 160px;
+}
+
+#songs>div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #333;
+    position: relative;
+}
+
+#songs h2 {
+    margin: 0;
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+#songs p {
+    margin: 0;
+    margin-right: 10px;
+    font-size: 16px;
+    color: #f2f2f2;
+}
+
+#songs img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+#player-controls img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+#player-controls p {
+    margin: 0;
+    margin-right: 10px;
+    font-size: 16px;
+    color: #f2f2f2;
+}
+
+#player-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    background-color: #333;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+}
+
+#song-info {
+    order: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 20px;
+    max-width: 30%;
+    overflow: hidden;
+    margin-right: auto;
+    flex-grow: 1;
+}
+
+#song-info p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#player-buttons-time {
+    order: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    margin-bottom: 40px;
+}
+
+#elapsed-time, #time-divider, #total-time {
+    margin-left: 10px;
+    color: #f2f2f2;
+}
+
+#skip-button, #pause-button, #play-button{
+    font-size: 30px;
+    background-color: transparent;
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+}
+
+#pause-button {
+    background: url('/static/images/pauseButton.png') no-repeat center center;
+    background-size: contain;
+    margin-left: 30px;
+}
+
+#play-button {
+    background: url('/static/images/playButton.png') no-repeat center center;
+    background-size: contain;
+}
+
+#skip-button {
+    background: url('/static/images/skipButton.png') no-repeat center center;
+    background-size: contain;
+}
+
+#pause-button:hover {
+    background: url('/static/images/pauseButtonHover.png') no-repeat center center;
+    background-size: contain;
+}
+
+#play-button:hover {
+    background: url('/static/images/playButtonHover.png') no-repeat center center;
+    background-size: contain;
+}
+
+#skip-button:hover {
+    background: url('/static/images/skipButtonHover.png') no-repeat center center;
+    background-size: contain;
+}
+
+#progress-bar-container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: calc(100% - 40px); /* Subtract left and right margins from width */
+    height: 20px;
+    background-color: #666666;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+#progress-bar {
+    height: 100%;
+    width: 0;
+    background-color: #f2f2f2;
+    transition: width 1s;
+    border-radius: 10px;
+}
+
+#songs .platform-icon {
+    filter: invert(23%) brightness(95%);
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    margin-right: 20px;
+    margin-left: 10px;
+}
+
+#bar-container {
+    background-color: #333;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 20px;
+}

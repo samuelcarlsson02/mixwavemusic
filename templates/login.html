@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>MixWaveMusic - Login</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/login.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/shared.css') }}">
+    </head>
+
+    <body>
+        <div class="navbar">
+            <a href="/" class="logo">MixWaveMusic</a>
+            <div class="nav-links">
+                <div id="miniSearchBar">
+                    <input type="text" id="miniSearchInput" placeholder="What do you want to listen to?">
+                    <button id="miniSearchButton" onclick="search()">Search</button>
+                </div>
+                <a href="/">Home</a>
+                <a href="/playlists">Playlists</a>
+                <a id="loginNavButton" href="/login">Login</a>
+            </div>
+        </div>
+
+        <div id="loginContainer">
+            <h1 id="loginH1">Login to your account</h1>
+            <h2 id="usernameH2">Username:</h2>
+            <input type="text" id="usernameInput" placeholder="Username">
+            <h2 id="passwordH2">Password:</h2>
+            <input type="password" id="passwordInput" placeholder="Password">
+            <button id="loginWithSpotifyButton" onclick="loginSpotify()">Login with Spotify</button>
+            <div id="loginRegisterContainer">
+                <button id="loginButton" onclick="loginForm()">Login</button>
+                <button id="registerButton" onclick="openRegister()">Register</button>
+            </div>
+        </div>
+
+        <div id="errorPopup" class="popup">
+            <div class="popup-content">
+                <span class="close" onclick="closeErrorPopup()">&times;</span>
+                <p id="errorText"></p>
+            </div>
+        </div>
+
+        <div id="overlay"></div>
+    
+        <script src="{{ url_for('static', filename='js/login.js') }}" defer></script>
+        <script src="{{ url_for('static', filename='js/shared.js') }}" defer></script>
+    </body>
+
+</html>

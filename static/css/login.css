@@ -1,0 +1,99 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+#loginContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #333;
+    width: 45vw;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+    height: 100vh;
+}
+
+#loginH1 {
+    margin-bottom: 20px;
+    font-size: 40px;
+    margin-top: 130px;
+}
+
+#usernameH2, #passwordH2 {
+    text-align: left;
+    width: 88%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#usernameInput, #passwordInput{
+    width: 85%;
+    padding: 10px;
+    background-color: #666666;
+    font-size: 16px;
+    color: #f2f2f2;
+    border: none;
+    margin-bottom: 20px;
+}
+
+#loginRegisterContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 87%;
+    align-items: center;
+    margin: 0 auto;
+}
+
+#loginButton, #registerButton {
+    display: block;
+    width: 45%;
+    padding: 10px;
+    background-color: #666666;
+    font-size: 16px;
+    color: #f2f2f2;
+    text-align: center;
+    margin-top: 30px;
+    border: none;
+}
+
+#loginButton:hover, #registerButton:hover {
+    background-color: #f2f2f2;
+    color: black;
+}
+
+#loginWithSpotifyButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    width: 87%;
+    padding: 10px;
+    background-color: #4CAF50;
+    font-size: 16px;
+    color: #f2f2f2;
+    text-align: center;
+    margin-top: 20px;
+    border: none;
+    height: 50px;
+    position: relative;
+}
+
+#loginWithSpotifyButton::before {
+    content: "";
+    background-image: url('/static/images/spotify.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+#loginWithSpotifyButton:hover {
+    background-color: #3d8540;
+}

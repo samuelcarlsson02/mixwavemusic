@@ -1,0 +1,248 @@
+#searchResults {
+    margin-top: 95px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+#searchResults>div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #333;
+    position: relative;
+}
+
+#searchResults h2 {
+    margin: 0;
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+#searchResults p {
+    margin: 0;
+    margin-right: 10px;
+    font-size: 16px;
+    color: #f2f2f2;
+}
+
+#searchResults img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+#loadMoreResults {
+    display: none;
+    padding: 10px 20px;
+    margin-top: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    width: 200px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    outline: none;
+    border: none;
+    background-color: #333;
+    color: #f2f2f2;
+}
+
+#loadMoreResults:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.playlist-popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #333;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    width: 40vw;
+    height: auto;
+}
+
+.closeButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: #f2f2f2;
+}
+
+.closeButton:hover {
+    color: red;
+}
+
+.tab {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 0 10px;
+    background-color: #666666;
+    cursor: pointer;
+    font-size: 25px;
+    color: #f2f2f2;
+}
+
+.tabContent {
+    display: none;
+    padding: 20px;
+    background-color: #333;
+    color: #f2f2f2;
+}
+
+.tab:hover {
+    background-color: #f2f2f2;
+    color: black;
+}
+
+.tab.active {
+    background-color: #333;
+    border-bottom: none;
+    color: #f2f2f2;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    background-color: #666666;
+    font-size: 16px;
+    color: #f2f2f2;
+    border: none;
+}
+
+.choosePlaylist {
+    margin-bottom: 20px;
+}
+
+.nameNewPlaylist {
+    margin-bottom: 20px;
+}
+
+.addSongButton {
+    display: block;
+    width: 100px;
+    padding: 10px;
+    background-color: #666666;
+    font-size: 16px;
+    color: #f2f2f2;
+    text-align: center;
+    margin: auto;
+    margin-top: 20px;
+    border: none;
+}
+
+.addSongButton:hover {
+    background-color: #f2f2f2;
+    color: black;
+}
+
+.nameNewPlaylistInput {
+    width: 100%;
+    padding: 10px;
+    background-color: #666666;
+    font-size: 16px;
+    color: #f2f2f2;
+    border: none;
+}
+
+.createPlaylistButton {
+    display: block;
+    width: 140px;
+    padding: 10px;
+    background-color: #666666;
+    font-size: 16px;
+    color: #f2f2f2;
+    text-align: center;
+    margin: auto;
+    margin-top: 20px;
+    border: none;
+}
+
+.createPlaylistButton:hover {
+    background-color: #f2f2f2;
+    color: black;
+}
+
+.options-button {
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: auto;
+    position: relative;
+    outline: none;
+    border: none;
+    background-color: #666666;
+    color: #f2f2f2;
+}
+
+.options-button:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.dropdown-menu {
+    z-index: 1;
+    background-color: #666666;
+    position: absolute;
+    right: 0;
+    width: 200px;
+    top: 85%;
+}
+
+.dropdown-menu a {
+    display: block;
+    color: #f2f2f2;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.dropdown-menu a:hover {
+    background-color: #ddd;
+    color: black;
+    cursor: pointer;
+}
+
+#searchResults .platform-icon {
+    filter: invert(23%) brightness(95%);
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    margin-right: 20px;
+    margin-left: 10px;
+}
+
+#loadingSpinnerContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+#loadingSpinner {
+    border: 10px solid #f2f2f2;
+    border-top: 10px solid #666666;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }

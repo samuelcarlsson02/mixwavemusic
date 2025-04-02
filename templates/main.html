@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>MixWaveMusic</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/shared.css') }}">
+    </head>
+
+    <body>
+        <div class="navbar">
+            <a href="/" class="logo">MixWaveMusic</a>
+            <div class="nav-links">
+                <a href="/">Home</a>
+                <a href="/playlists">Playlists</a>
+                <a id="loginNavButton" href="/login">Login</a>
+            </div>
+        </div>
+
+        <div id="search">
+            <img id="searchBackground" src="../static/images/searchBackground.jpg" alt="Search Background">
+            <h1 id="mixwavemusic">MixWaveMusic</h1>
+            <h2 id="slogan">Explore music from all your favourite music services</h3>
+            <div id="searchBar">
+                <input type="text" id="searchInput" placeholder="What do you want to listen to?">
+                <button id="searchButton" onclick="search()">Search</button>
+            </div>
+        </div>
+
+        <script src="{{ url_for('static', filename='js/main.js') }}" defer></script>
+        <script src="{{ url_for('static', filename='js/shared.js') }}" defer></script>
+    </body>
+
+</html>
